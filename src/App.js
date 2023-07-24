@@ -1,9 +1,7 @@
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="bg-purple-500">
+      <header className="text-3xl font-bold underline">
         <h1>Amazon E-Commerce</h1>
       </header>
     </div>
