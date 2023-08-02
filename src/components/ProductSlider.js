@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Link } from 'react-router-dom';
 
 const ProductSlider = () => (
   <div className="bg-white ml-8 mr-8 mt-3 mb-3 p-3 rounded-[20px]">
@@ -16,7 +17,10 @@ const ProductSlider = () => (
       {
         Array.from({ length: 9 }, (_, i) => (
           <SwiperSlide key={i}>
-            <img src={`../../images/product_${i}_small.jpg`} alt="category" />
+            <Link to={`/product/${i}`}>
+              <img src={`../../images/product_${i}_small.jpg`} alt="category" />
+            </Link>
+
           </SwiperSlide>
         ))
       }
