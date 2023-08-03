@@ -1,13 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MapPinIcon, Bars3Icon, ShoppingCartIcon } from '@heroicons/react/24/outline';
 import Search from './Search';
 
 const Navbar = () => (
   <header className="">
     <div className="flex items-center pr-5 pl-5 h-14 bg-amazonclone-default text-red-50">
-      <div>
-        <img src="../../images/amazon.png" className="w-24" alt="amazon" />
-      </div>
+      <Link to="/">
+        <div>
+          <img src="../../images/amazon.png" className="w-24" alt="amazon" />
+        </div>
+      </Link>
       <div className="flex pl-4 pr-4">
         <div>
           <MapPinIcon className="w-[25px] mt-3" />
@@ -29,10 +32,12 @@ const Navbar = () => (
         <div className="text-xs xl:text-sm">Returns</div>
         <div className="text-sm xl:text-base font-bold">& Orders</div>
       </div>
-      <div className="flex">
-        <ShoppingCartIcon className="text-white h-12" />
-        <div className="mt-6 text-xs xl:text-sm font-bold">Cart</div>
-      </div>
+      <Link to="/checkout">
+        <div className="flex">
+          <ShoppingCartIcon className="text-white h-12" />
+          <div className="mt-6 text-xs xl:text-sm font-bold">Cart</div>
+        </div>
+      </Link>
     </div>
     <div className="flex items-center bg-amazonclone-light_blue text-white pl-5 h-10 space-x-4">
       <div className="flex items-center">

@@ -8,8 +8,8 @@ import Checkout from './components/Checkout';
 function App() {
   return (
     <>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/search" element={<SearchResults />} />
