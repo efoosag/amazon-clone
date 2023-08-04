@@ -77,7 +77,7 @@ const Search = () => {
           })
             .slice(0, 10)
             .map((suggestion) => (
-              <div key={suggestion.id} onClick={() => setSearchItem(suggestion.title)} aria-hidden="true">
+              <div key={suggestion.id} onClick={() => setSearchItem(suggestion.title)} aria-hidden="true" className="cursor-pointer">
                 {suggestion.title}
               </div>
             ))
