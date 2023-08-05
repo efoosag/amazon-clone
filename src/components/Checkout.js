@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import ProductDetails from './ProductDetails';
 import US_CURRENCY from '../utility/constants';
-import { removeFromCart } from '../features/cartSlice';
+import { removeFromCart, increaseProductQuantity, decreaseProductQuantity } from '../features/cartSlice';
 
 const Checkout = () => {
   const dispatch = useDispatch();
@@ -11,6 +11,7 @@ const Checkout = () => {
   const itemsNumbers = useSelector((state) => state.cart.productNumber);
   const subTotal = useSelector((state) => state.cart.products.reduce((subtotal, product) => subtotal
     + (product.price * product.quantity), 0));
+
   return (
     <div className="bg-amazonclone-background">
       <div className="m-auto p-2">
@@ -37,9 +38,13 @@ const Checkout = () => {
                         <button type="button" className="text-sm xl:text-base font-semibold text-red-500 mt-2 mb-2" onClick={() => dispatch(removeFromCart(product.id))}>Delete</button>
                       </div>
                       <div className="grid grid-cols-3 w-20 text-center">
-                        <div className="text-xl xl:text-2xl bg-gray-400 rounded">-</div>
+                        <div className="text-xl xl:text-2xl bg-gray-400 rounded">
+                          <button type="button" onClick={() => dispatch(decreaseProductQuantity(product.id))}>-</button>
+                        </div>
                         <div className="text-lg xl:text-xl bg-gray-200">{product.quantity}</div>
-                        <div className="text-xl xl:text-2xl bg-gray-400 rounded">+</div>
+                        <div className="text-xl xl:text-2xl bg-gray-400 rounded">
+                          <button type="button" onClick={() => dispatch(increaseProductQuantity(product.id))}>+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
