@@ -3,28 +3,28 @@ import HomePageCard from './HomePageCard';
 
 const items = [
   {
-    id: 1, title: 'test1', imag: '../../images/home_grid_1.jpg', link: 'welcome',
+    id: 1, title: 'We have a surprise for you', imag: '../../images/home_grid_1.jpg', link: 'See terms and conditions',
   },
   {
-    id: 2, title: 'test1', imag: '../../images/home_grid_2.jpg', link: 'welcome',
+    id: 2, title: 'Watch The Rings of Power', imag: '../../images/home_grid_2.jpg', link: 'Start streaming now',
   },
   {
-    id: 3, title: 'test1', imag: '../../images/home_grid_3.jpg', link: 'welcome',
+    id: 3, title: 'Unlimited Streaming', imag: '../../images/home_grid_3.jpg', link: 'Find out more',
   },
   {
-    id: 4, title: 'test1', imag: '../../images/home_grid_4.jpg', link: 'welcome',
+    id: 4, title: 'More titles to explore', imag: '../../images/home_grid_4.jpg', link: 'Browse Kindle Unlimited',
   },
   {
-    id: 5, title: 'test1', imag: '../../images/home_grid_5.jpg', link: 'welcome',
+    id: 5, title: 'Shop Pet Supplies', imag: '../../images/home_grid_5.jpg', link: 'See more',
   },
   {
-    id: 6, title: 'test1', imag: '../../images/home_grid_6.jpg', link: 'welcome',
+    id: 6, title: 'Spring Sale', imag: '../../images/home_grid_6.jpg', link: 'See the deals',
   },
   {
-    id: 7, title: 'test1', imag: '../../images/home_grid_7.jpg', link: 'welcome',
+    id: 7, title: 'Echo Buds', imag: '../../images/home_grid_7.jpg', link: 'See more',
   },
   {
-    id: 8, title: 'test1', imag: '../../images/home_grid_8.jpg', link: 'welcome',
+    id: 8, title: 'Family Plan: 3 months free', imag: '../../images/home_grid_8.jpg', link: 'Learn more',
   },
 ];
 const HomePageLists = () => (
