@@ -1,15 +1,21 @@
 import React from 'react';
-import HomePageCarousel from './HomePageCarousel';
-import HomePageContent from './HomePageContent';
+import Slider from './Slider';
+import HomePageLists from './HomePageLists';
+import CategorySlider from './CategorySlider';
+import ProductSlider from './ProductSlider';
 
 const HomePage = () => (
-  <div className="min-w-[1000px] max-w-[1200px] m-auto bg-amazonclone-background">
-    <HomePageCarousel />
-    ;
-    <HomePageContent />
-    ;
+  <div className="bg-amazonclone-background">
+    <div>
+      <Slider />
+      <HomePageLists />
+      <ProductSlider />
+      <CategorySlider />
+      <div className="h-[200px] mt-4">
+        <img src="../../images/banner_image.jpg" className="h-[100%] m-auto" alt="banner" />
+      </div>
+    </div>
   </div>
-
 );
 
 export default HomePage;
