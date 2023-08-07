@@ -1,11 +1,17 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navigation from './components/NavBar';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>My Amazon clone</h1>
-      </header>
+      <BrowserRouter>
+        <Navigation />
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
