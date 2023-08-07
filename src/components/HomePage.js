@@ -1,11 +1,12 @@
 import React from 'react';
 import HomePageCarousel from './HomePageCarousel';
+import HomePageContent from './HomePageContent';
 
 const HomePage = () => (
-  <div>
+  <div className="min-w-[1000px] max-w-[1200px] m-auto bg-amazonclone-background">
     <HomePageCarousel />
     ;
-    <div>HomePage</div>
+    <HomePageContent />
     ;
   </div>
 
