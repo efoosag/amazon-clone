@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingCartIcon, Bars3Icon } from '@heroicons/react/24/outline';
-import Search from './Search';
+import Search from './components/Search';
 
 const NavBar = () => (
   <header className="min-w-[1000px]">
